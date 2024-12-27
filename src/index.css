@@ -2,7 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Mario";
+  src: url("/src/assets/fonts/SuperMario256.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-
-
-
+@layer base {
+  /* :root {
+    --radius: 0.5rem;
+  }
+  html {
+    @apply box-border;
+  } */
+  /* h1 {
+      @apply text-3xl font-semibold;
+    }
+    h2 {
+      @apply text-xl font-semibold;
+    }
+    h3 {
+      @apply text-xs font-semibold;
+    }
+    p {
+      @apply text-base font-normal;
+    }
+    .p1 {
+      @apply text-xs font-normal;
+    } */
+}
