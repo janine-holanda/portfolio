@@ -13,6 +13,7 @@ export default {
         "m-yellow": "#fcd000",
         "m-blue-navy": "#2765d6",
         "m-light-blue": "#519bde",
+        "m-blue-sky": "#9ce6e6",
       },
       keyframes: {
         spinY: {

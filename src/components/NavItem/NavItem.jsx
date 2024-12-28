@@ -5,7 +5,7 @@ export default function NavItem({ img, text, textColor }) {
 
   return (
     <div
-      className="flex flex-col items-center"
+      className="flex flex-col items-center cursor-pointer"
       onMouseEnter={(e) => {
         setShowText("block");
       }}
