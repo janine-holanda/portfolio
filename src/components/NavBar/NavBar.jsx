@@ -14,7 +14,7 @@ export default function NavBar({
   hireMeRef,
 }) {
   return (
-    <header className="fixed w-full pb-2 pt-4 z-50 backdrop-blur-lg bg-white/5 shadow-md ring-1 ring-black/5 h-fit sm:ml-2 sm:h-full sm:w-16 sm:py-0 sm:backdrop-filter-none sm:bg-transparent">
+    <header className="fixed w-full pb-2 pt-4 z-50 backdrop-blur-lg bg-white/5 shadow-md ring-1 ring-black/5 h-fit  sm:h-full sm:w-16 sm:py-0 ">
       <nav className="container sm:h-full">
         <ul className="grid grid-cols-5 h-full items-center sm:grid-cols-1 sm:grid-rows-5">
           <li onClick={() => handleScrollToSection(homeRef)}>
