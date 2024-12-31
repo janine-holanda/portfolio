@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         mario: ["Mario", "sans-serif"],
+        sans: ["Montserrat"],
       },
       colors: {
         "m-red": "#e71e06",
@@ -14,6 +15,13 @@ export default {
         "m-blue-navy": "#2765d6",
         "m-light-blue": "#519bde",
         "m-blue-sky": "#9ce6e6",
+      },
+      backgroundImage: {
+        banner: "url('./src/assets/img/banner.png')",
+        "skills-pattern": "url('./src/assets/img/bg-section-skills.png')",
+        "projects-pattern": "url('./src/assets/img/bg-section-projects.png')",
+        "my-world-pattern": "url('./src/assets/img/bg-section-my-world.png')",
+        "footer-pattern": "url('./src/assets/img/bg-footer.png')",
       },
       keyframes: {
         spinY: {
