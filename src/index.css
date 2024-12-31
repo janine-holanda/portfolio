@@ -32,4 +32,16 @@
     .p1 {
       @apply text-xs font-normal;
     } */
+
+    section {
+      @apply pt-[5rem] pb-4 sm:pt-0 sm:px-6;
+    }
+
+   
+}
+
+@layer components {
+  .container {
+    @apply w-4/5 max-w-7xl my-0 mx-auto;
+}
 }
