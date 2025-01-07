@@ -12,16 +12,15 @@ export default {
         "m-blue": "#019cda",
         "m-green": "#42b133",
         "m-yellow": "#fcd000",
-        "m-blue-navy": "#2765d6",
+        "m-navy": "#2765d6",
         "m-light-blue": "#519bde",
-        "m-blue-sky": "#9ce6e6",
       },
       backgroundImage: {
         banner: "url('./src/assets/img/banner.png')",
         "skills-pattern": "url('./src/assets/img/bg-section-skills.png')",
         "projects-pattern": "url('./src/assets/img/bg-section-projects.png')",
         "my-world-pattern": "url('./src/assets/img/bg-section-my-world.png')",
-        "footer-pattern": "url('./src/assets/img/bg-footer.png')",
+        "contact-me-pattern": "url('./src/assets/img/bg-contact-me.png')",
       },
       keyframes: {
         spinY: {
