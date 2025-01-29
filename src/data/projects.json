@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "image_path": "src/assets/img/banner.png",
+        "name": "Shopbite", 
+        "description": "eCommerce application built with the MERN stack (MongoDB, Express, React, NodeJS)",
+        "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
+        "technologies": ["MongoDB", "Express", "React", "NodeJS"]
+      },
+    {
+        "id": "2",
+        "image_path": "src/assets/img/banner.png",
+        "name": "Test", 
+        "description": "Test (MongoDB, Express, React, NodeJS)",
+        "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
+        "technologies": ["MongoDB", "Express", "React", "NodeJS", "Express", "React", "NodeJS"]
+      },
+    {
+        "id": "3",
+        "image_path": "src/assets/img/banner.png",
+        "name": "Test", 
+        "description": "Test (MongoDB, Express, React, NodeJS)",
+        "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
+        "technologies": ["MongoDB", "Express", "React", "NodeJS", "Express", "React", "NodeJS"]
+      },
+    {
+        "id": "4",
+        "image_path": "src/assets/img/banner.png",
+        "name": "Test", 
+        "description": "Test (MongoDB, Express, React, NodeJS)",
+        "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
+        "technologies": ["MongoDB", "Express", "React", "NodeJS", "Express", "React", "NodeJS"]
+      },
+    {
+        "id": "5",
+        "image_path": "src/assets/img/banner.png",
+        "name": "Test", 
+        "description": "Test (MongoDB, Express, React, NodeJS)",
+        "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
+        "technologies": ["MongoDB", "Express", "React", "NodeJS", "Express", "React", "NodeJS"]
+      },
+    {
+        "id": "6",
+        "image_path": "src/assets/img/banner.png",
+        "name": "Test", 
+        "description": "Test (MongoDB, Express, React, NodeJS)",
+        "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
+        "technologies": ["MongoDB", "Express", "React", "NodeJS", "Express", "React", "NodeJS"]
+      }
+  ]

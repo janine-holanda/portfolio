@@ -1,13 +1,16 @@
+import projectsData from "../../data/projects.json";
+import Card from "../ProjectCard/Card";
+
 export default function ProjectsSection({ projectsRef }) {
   return (
-    <section
-      ref={projectsRef}
-      className="section min-h-lvh bg-projects-pattern bg-contain bg-repeat"
-    >
-      <div className="container flex flex-col justify-center items-center h-full">
-        <h1 className="font-mario text-m-yellow text-4xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] tracking-widest">
-          Projects
-        </h1>
+    <section ref={projectsRef} className="section bg-projects-pattern">
+      <div className="container h-full">
+        <h1 className="text-m-yellow">Projects</h1>
+        <div className="flex flex-wrap justify-center gap-6">
+          {projectsData.map((project) => {
+            return <Card key={project.id} project={project} />;
+          })}
+        </div>
       </div>
     </section>
   );
