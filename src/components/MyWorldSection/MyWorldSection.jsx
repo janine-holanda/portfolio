@@ -10,47 +10,43 @@ import mushroom_up_icon from "../../assets/icons/mushroom_up_icon.png";
 
 export default function MyWorldSection({ myWorldRef }) {
   return (
-    <section
-      ref={myWorldRef}
-      className="section min-h-lvh bg-my-world-pattern bg-contain bg-repeat"
-    >
+    <section ref={myWorldRef} className="section bg-my-world-pattern">
       <div className="container h-full">
-        <h1 className="my-8 font-mario text-m-blue text-3xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] tracking-widest text-center sm:pt-8 sm:mt-0 sm:text-4xl">
-          My World
-        </h1>
-        <div className="grid grid-cols-1 justify-items-center lg:grid-cols-2">
-          <h2 className="text-xl font-semibold text-m-blue mb-4 lg:col-span-2">
+        <h1 className="text-m-blue">My World</h1>
+        <div className="grid grid-cols-1 justify-items-center lg:grid-cols-2 lg:gap-x-8 lg:gap-y-14">
+          <h2 className="text-m-blue lg:col-span-2 lg:mb-0">
             Professional Quests
           </h2>
-          <div className="flex flex-col items-center mb-8">
+          <div className="flex flex-col items-center mb-8 lg:mb-0">
             <img
               className="object-contain max-w-full h-28"
               src={education_icon}
               alt="Education Icon"
             />
-            <h2 className="text-l font-semibold text-m-blue mb-4">Education</h2>
+            <h3 className=" text-m-blue">Education</h3>
             <div>
               <article className="flex gap-4 mb-4">
                 <img
-                  className="object-contain max-w-full h-auto"
+                  className="object-contain max-w-full h-auto animate-spinCoinY"
                   src={brainstation_icon}
                   alt="BrainStation Logo"
                 />
                 <div>
                   <p className="text-sm font-semibold">BrainStation</p>
-                  <p className="text-xs text-slate-400">Toronto (2024)</p>
+                  <p className="text-xs text-slate-700">Toronto (2024)</p>
                   <p className="text-sm">Diploma: Software Engineering</p>
                 </div>
               </article>
               <article className="flex gap-4 mb-4">
                 <img
-                  className="object-contain max-w-full h-auto"
+                  className="object-contain max-w-full h-auto animate-imageFadeIn"
                   src={seneca_icon}
-                  alt="BrainStation Logo"
+                  alt="Seneca Logo"
                 />
+
                 <div>
                   <p className="text-sm font-semibold">Seneca</p>
-                  <p className="text-xs text-slate-400">
+                  <p className="text-xs text-slate-700">
                     Toronto (2020 - 2023)
                   </p>
                   <p className="text-sm">
@@ -70,7 +66,7 @@ export default function MyWorldSection({ myWorldRef }) {
                     Instituto Federal de Educação,
                     <br /> Ciência e Tecnologia do Ceará
                   </p>
-                  <p className="text-xs text-slate-400">Brazil</p>
+                  <p className="text-xs text-slate-700">Brazil</p>
                   <p className="text-sm">
                     Bachelor&apos; Degree: Mechatronic
                     <br /> Engineering
@@ -79,16 +75,14 @@ export default function MyWorldSection({ myWorldRef }) {
               </article>
             </div>
           </div>
-          <div className="flex flex-col items-center mb-8">
+          <div className="flex flex-col items-center mb-8 lg:mb-0">
             <img
-              className="object-contain max-w-full h-20 mb-4"
+              className="object-contain max-w-full h-20 mb-4 lg:mt-3"
               src={question_icon}
               alt="Question Icon"
             />
-            <h2 className="text-l font-semibold text-m-blue mb-4">
-              Why Software Engineering?
-            </h2>
-            <p className="text-sm mb-4 max-w-2xl">
+            <h3 className="  text-m-blue">Why Software Engineering?</h3>
+            <p className="text-sm mb-4 max-w-2xl lg:text-base text-justify hyphens-auto">
               I decided to transition my career to this fascinating world
               because I worked as a System Analyst at Ihm Stefanini for 5 years,
               where I built applications to monitor and control manufacturing
@@ -98,12 +92,12 @@ export default function MyWorldSection({ myWorldRef }) {
               passion is using technology to solve real-world problems and
               enhance user experience.
             </p>
-            <p className="text-sm font-semibold text-center max-w-xl">
+            <b className="text-sm text-center max-w-xl lg:text-base">
               “I have completed 17 projects, including Software Development Life
               Cycle, migrations, and software maintenance.”
-            </p>
+            </b>
           </div>
-          <div className="flex justify-center items-end flex-wrap gap-8 lg:col-span-2">
+          <div className="flex justify-center items-end flex-wrap gap-8 lg:col-span-2 lg:justify-around w-3/4">
             <article className="flex flex-col items-center">
               <div className="flex items-center mb-3">
                 <img
@@ -117,11 +111,11 @@ export default function MyWorldSection({ myWorldRef }) {
                   alt=""
                 />
               </div>
-              <p className="text-sm font-semibold text-m-blue text-center">
+              <b className="text-sm text-m-blue text-center lg:text-base">
                 Creative to find
                 <br />
                 solutions
-              </p>
+              </b>
             </article>
             <article className="flex flex-col items-center">
               <div className="flex items-center mb-1">
@@ -131,28 +125,28 @@ export default function MyWorldSection({ myWorldRef }) {
                   alt=""
                 />
               </div>
-              <p className="text-sm font-semibold text-m-blue text-center">
+              <b className="text-sm text-m-blue text-center lg:text-base">
                 Resilient and adaptable
                 <br />
                 to achieve the goals
-              </p>
+              </b>
             </article>
             <article className="flex flex-col items-center">
               <div className="flex flex-col items-center mb-3">
-                <h1 className="font-mario text-white text-sm drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] tracking-widest text-center">
+                <span className="font-mario text-white text-sm drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] tracking-widest text-center">
                   1-up
-                </h1>
+                </span>
                 <img
                   className="object-contain max-w-full w-12"
                   src={mushroom_up_icon}
                   alt=""
                 />
               </div>
-              <p className="text-sm font-semibold text-m-blue text-center">
+              <b className="text-sm text-m-blue text-center lg:text-base">
                 Curious to leveup
                 <br />
                 my knowledge
-              </p>
+              </b>
             </article>
           </div>
         </div>
