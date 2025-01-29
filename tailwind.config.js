@@ -31,10 +31,21 @@ export default {
           from: { opacity: 0 },
           to: { opacity: 1 },
         },
+        imageFadeIn: {
+          from: { opacity: 0.7 },
+          to: { opacity: 1 },
+        },
+        banner: {
+          from: { backgroundPosition: "0% 0%" },
+          to: { backgroundPosition: "100% 0%" },
+        },
       },
       animation: {
         spinY: "spinY 2s ease-in-out infinite",
+        spinCoinY: "spinY 2s linear infinite",
         fadeIn: "fadeIn 1s",
+        imageFadeIn: "imageFadeIn 1s linear infinite",
+        banner: "banner 15s linear infinite alternate",
       },
     },
   },
