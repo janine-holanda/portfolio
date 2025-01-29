@@ -17,31 +17,29 @@
   html {
     @apply box-border;
   } */
-  /* h1 {
-      @apply text-3xl font-semibold;
+  h1 {
+      @apply my-8 font-mario text-3xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] tracking-widest text-center sm:pt-8 sm:mt-0 sm:text-4xl lg:mb-10 lg:pt-12;
     }
     h2 {
-      @apply text-xl font-semibold;
+      @apply text-center text-xl font-semibold mb-4 lg:text-2xl;
     }
     h3 {
-      @apply text-xs font-semibold;
+      @apply font-semibold mb-4 lg:text-lg;
     }
-    p {
+    /* p {
       @apply text-base font-normal;
     }
     .p1 {
       @apply text-xs font-normal;
     } */
 
-    section {
-      @apply pt-[5rem] pb-4 sm:pt-0 sm:px-6;
-    }
-
-   
+  section {
+    @apply pt-[5rem] pb-4 sm:pt-0 sm:pr-6 sm:pl-[5.5rem] min-h-lvh bg-contain bg-repeat;
+  }
 }
 
 @layer components {
   .container {
     @apply w-4/5 max-w-7xl my-0 mx-auto;
-}
+  }
 }
