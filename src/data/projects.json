@@ -1,50 +1,42 @@
 [
     {
-        "id": "1",
-        "image_path": "src/assets/img/banner.png",
-        "name": "Shopbite", 
-        "description": "eCommerce application built with the MERN stack (MongoDB, Express, React, NodeJS)",
-        "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
-        "technologies": ["MongoDB", "Express", "React", "NodeJS"]
-      },
+      "id": "1",
+      "image_path": "src/assets/img/portfolio-project.png",
+      "name": "Portfolio", 
+      "description": "An engaging front-end web application designed with gamification UI elements to ensure users have a fun experience while learning about my career journey. (React.js, Tailwindcss)",
+      "repository_url": "https://github.com/janine-holanda/portfolio",
+      "technologies": ["Tailwindcss-motion", "Single Page Application (SPA)", "Responsive Design", "JavaScript ES6 Features", "JSON", "Git / GitHub"]
+    },
     {
         "id": "2",
-        "image_path": "src/assets/img/banner.png",
-        "name": "Test", 
-        "description": "Test (MongoDB, Express, React, NodeJS)",
+        "image_path": "src/assets/img/edothub-project.png",
+        "name": "E.HUB (Capstone)", 
+        "description": "Web App (CRM) that simplifies corporate event management by centralizing communication between event hosts and managers. (React.js, Tailwindcss, Node.js, Express.js / REST Api)",
         "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
-        "technologies": ["MongoDB", "Express", "React", "NodeJS", "Express", "React", "NodeJS"]
+        "technologies": ["React Hooks / React Router", "Shadcn/UI Library", "Single Page Application (SPA)", "JavaScript ES6 Features", "Axios", "JSON", "Postman", "Git / GitHub", "JSON"]
       },
     {
         "id": "3",
-        "image_path": "src/assets/img/banner.png",
-        "name": "Test", 
-        "description": "Test (MongoDB, Express, React, NodeJS)",
-        "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
-        "technologies": ["MongoDB", "Express", "React", "NodeJS", "Express", "React", "NodeJS"]
+        "image_path": "src/assets/img/instock-project.png",
+        "name": "InStock", 
+        "description": "A full-stack web app developed as part of an Agile team to create an Inventory Management System. (React.js, SASS, Node.js, Express.js, Knex.js, SQL)",
+        "repository_url": "https://github.com/janine-holanda/group-6-instock",
+        "technologies": ["React Hooks / React Router", "Figma", "BEM Naming Convention", "Single Page Application (SPA)", "Responsive Design", "JavaScript ES6 Features", "Axios", "REST API", "Postman", "Code Review / Git Flow / GitHub", "Jira"]
       },
     {
         "id": "4",
         "image_path": "src/assets/img/banner.png",
-        "name": "Test", 
-        "description": "Test (MongoDB, Express, React, NodeJS)",
-        "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
-        "technologies": ["MongoDB", "Express", "React", "NodeJS", "Express", "React", "NodeJS"]
+        "name": "Expense Tracker", 
+        "description": "BrainStation Hackathon (6h): A full-stack web app that allows users add expenses, check the total amount spent, create new categories, and categorize expenses. (React.js, SASS, Node.js, Express.js)",
+        "repository_url": "https://github.com/janine-holanda/expense-tracker",
+        "technologies": ["React Hooks / React Router", "BEM Naming Convention", "Single Page Application (SPA)", "Responsive Design", "JavaScript ES6 Features", "Axios", "REST API", "Postman", "Git / GitHub", "Pair Programming"]
       },
     {
         "id": "5",
         "image_path": "src/assets/img/banner.png",
-        "name": "Test", 
-        "description": "Test (MongoDB, Express, React, NodeJS)",
-        "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
-        "technologies": ["MongoDB", "Express", "React", "NodeJS", "Express", "React", "NodeJS"]
-      },
-    {
-        "id": "6",
-        "image_path": "src/assets/img/banner.png",
-        "name": "Test", 
-        "description": "Test (MongoDB, Express, React, NodeJS)",
-        "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
-        "technologies": ["MongoDB", "Express", "React", "NodeJS", "Express", "React", "NodeJS"]
+        "name": "Break the Pig Bank", 
+        "description": "BrainStation Hackathon (24h): Front-end web app inspired by the 'Who wants to be a millionaire?' game where users can answer questions and earn 'money'. (HTML, SASS, Vanilla JavaScript, Web API)",
+        "repository_url": "https://github.com/janine-holanda/hackathon-trivia-game",
+        "technologies": ["Web API: Open Trivia Database (https://opentdb.com/)", "Responsive Design", "Partials / Mixins / Typography", "Git / GitHub", "Note: This project was a collaborative effort, with my primary responsibilities focused on the desing, HTML and SASS."]
       }
   ]
