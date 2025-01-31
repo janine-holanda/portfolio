@@ -46,7 +46,7 @@ export default function Card({ project }) {
         }`}
       >
         <div className="flex justify-between items-center mb-4">
-          <h5 className="text-2xl font-medium text-white">{project.name}</h5>
+          <h5 className="text-xl font-medium text-white">{project.name}</h5>
           <img
             src={starImg}
             alt=""
@@ -54,7 +54,7 @@ export default function Card({ project }) {
             onClick={() => setShowDetails(!showDetails)}
           />
         </div>
-        <ul className="list-disc pl-4">
+        <ul className="list-disc pl-4 text-sm">
           {project.technologies.map((technologie, i) => {
             return <li key={i}>{technologie}</li>;
           })}
@@ -68,7 +68,7 @@ export default function Card({ project }) {
         <img
           src={starImg}
           alt=""
-          className="object-fill w-16 h-14 absolute top-[38%] right-10 animate-[bounce_1s_infinite] cursor-pointer"
+          className="object-fill w-16 h-14 absolute top-[33%] right-6 animate-[bounce_1s_infinite] cursor-pointer"
           onClick={() => setShowDetails(!showDetails)}
         />
         <div className="h-[40%]">
@@ -91,13 +91,13 @@ export default function Card({ project }) {
             />
           </div>
         )}
-        <div className="h-[45%] px-2 py-4">
-          <h5 className="text-2xl font-medium mb-2 text-black">
+        <div className="h-[50%] px-2 py-2">
+          <h5 className="text-xl font-medium mb-2 text-black">
             {project.name}
           </h5>
-          <p>{project.description}</p>
+          <p className="text-sm">{project.description}</p>
         </div>
-        <div className="h-[15%] p-2 text-center">
+        <div className="h-[10%] px-2 text-center">
           <a
             href={project.repository_url}
             target="_blank"
