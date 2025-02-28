@@ -13,7 +13,7 @@
         "name": "E.HUB (Capstone)", 
         "description": "Web App (CRM) that simplifies corporate event management by centralizing communication between event hosts and managers. (React.js, Tailwindcss, Node.js, Express.js / REST Api)",
         "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
-        "technologies": ["React Hooks / React Router", "Shadcn/UI Library", "Single Page Application (SPA)", "JavaScript ES6 Features", "Axios", "JSON", "Postman", "Git / GitHub", "JSON"]
+        "technologies": ["React Hooks / React Router", "Shadcn/UI Library", "Single Page Application (SPA)", "JavaScript ES6 Features", "Axios", "JSON", "Postman", "Git / GitHub", "JSON", "Note: The project is currently in progress."]
       },
     {
         "id": "3",
@@ -25,7 +25,7 @@
       },
     {
         "id": "4",
-        "image_path": "src/assets/img/banner.png",
+        "image_path": "src/assets/img/expense-tracker-project.png",
         "name": "Expense Tracker", 
         "description": "BrainStation Hackathon (6h): A full-stack web app that allows users add expenses, check the total amount spent, create new categories, and categorize expenses. (React.js, SASS, Node.js, Express.js)",
         "repository_url": "https://github.com/janine-holanda/expense-tracker",
@@ -33,7 +33,7 @@
       },
     {
         "id": "5",
-        "image_path": "src/assets/img/banner.png",
+        "image_path": "src/assets/img/break-the-pig-bank-project.png",
         "name": "Break the Pig Bank", 
         "description": "BrainStation Hackathon (24h): Front-end web app inspired by the 'Who wants to be a millionaire?' game where users can answer questions and earn 'money'. (HTML, SASS, Vanilla JavaScript, Web API)",
         "repository_url": "https://github.com/janine-holanda/hackathon-trivia-game",
