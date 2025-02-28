@@ -34,7 +34,7 @@
     } */
 
   section {
-    @apply pt-[5rem] pb-4 sm:pt-0 sm:pr-6 sm:pl-[5.5rem] min-h-lvh bg-contain bg-repeat;
+    @apply pt-[5rem] pb-4 sm:pt-0 sm:pr-6 sm:pl-[5.5rem] min-h-lvh bg-contain bg-repeat overflow-x-hidden;
   }
 }
 
