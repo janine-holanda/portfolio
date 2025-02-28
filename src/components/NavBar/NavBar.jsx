@@ -30,7 +30,7 @@ export default function NavBar({
             <NavItem img={starImg} text="PROJECTS" textColor={"m-yellow"} />
           </li>
           <li onClick={() => handleScrollToSection(contactMeRef)}>
-            <NavItem img={blueLumaImg} text="Contact Me" textColor={"white"} />
+            <NavItem img={blueLumaImg} text="Contact Me" textColor={"m-navy"} />
           </li>
         </ul>
       </nav>
