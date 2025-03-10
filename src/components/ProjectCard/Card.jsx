@@ -61,7 +61,7 @@ export default function Card({ project }) {
         </ul>
       </div>
       <div
-        className={`rounded-lg bg-gradient-to-bl from-blue-200 via-sky-300 to-sky-600 w-full h-full ${
+        className={`rounded-lg bg-gradient-to-bl from-m-blue via-blue-300 to-blue-500 w-full h-full ${
           showDetails ? "hidden" : "block"
         }`}
       >

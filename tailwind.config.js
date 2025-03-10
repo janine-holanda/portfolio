@@ -42,7 +42,7 @@ module.exports = withMT({
         },
       },
       animation: {
-        spinY: "spinY 2s ease-in-out infinite",
+        spinY: "spinY 2s linear infinite",
         spinCoinY: "spinY 2s linear infinite",
         fadeIn: "fadeIn 1s",
         imageFadeIn: "imageFadeIn 1s linear infinite",
@@ -50,5 +50,5 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-motion")],
 });

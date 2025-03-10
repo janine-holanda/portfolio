@@ -7,12 +7,21 @@ import key_icon from "../../assets/icons/key_icon.png";
 import door_lock_icon from "../../assets/icons/door_lock_icon.png";
 import bullet_icon from "../../assets/icons/bullet_icon.png";
 import mushroom_up_icon from "../../assets/icons/mushroom_up_icon.png";
+import { useState } from "react";
 
 export default function MyWorldSection({ myWorldRef }) {
+  const [showBulletAnimation, setShowBulletAnimation] = useState("");
+  const [showMushroomUpAnimation, setShowMushroomUpAnimation] = useState("");
+  const [showDoorKeyAnimation, setShowDoorKeyAnimation] = useState({
+    door: "",
+    key: "",
+  });
   return (
     <section ref={myWorldRef} className="section bg-my-world-pattern">
       <div className="container h-full">
-        <h1 className="text-m-blue">My World</h1>
+        <h1 className="text-m-blue motion-preset-slide-left-lg motion-duration-2000 motion-delay-500 motion-ease-bounce">
+          My World
+        </h1>
         <div className="grid grid-cols-1 justify-items-center lg:grid-cols-2 lg:gap-x-8 lg:gap-y-14">
           <h2 className="text-m-blue lg:col-span-2 lg:mb-0">
             Professional Quests
@@ -27,7 +36,7 @@ export default function MyWorldSection({ myWorldRef }) {
             <div>
               <article className="flex gap-4 mb-4">
                 <img
-                  className="object-contain max-w-full h-auto animate-spinCoinY"
+                  className="object-contain max-w-full h-auto animate-spinY"
                   src={brainstation_icon}
                   alt="BrainStation Logo"
                 />
@@ -39,7 +48,7 @@ export default function MyWorldSection({ myWorldRef }) {
               </article>
               <article className="flex gap-4 mb-4">
                 <img
-                  className="object-contain max-w-full h-auto animate-imageFadeIn"
+                  className="object-contain max-w-full h-auto animate-spinY"
                   src={seneca_icon}
                   alt="Seneca Logo"
                 />
@@ -57,7 +66,7 @@ export default function MyWorldSection({ myWorldRef }) {
               </article>
               <article className="flex gap-4">
                 <img
-                  className="object-contain max-w-full h-auto"
+                  className="object-contain max-w-full h-auto animate-spinY"
                   src={ifce_icon}
                   alt="BrainStation Logo"
                 />
@@ -77,7 +86,7 @@ export default function MyWorldSection({ myWorldRef }) {
           </div>
           <div className="flex flex-col items-center mb-8 lg:mb-0">
             <img
-              className="object-contain max-w-full h-20 mb-4 lg:mt-3"
+              className="object-contain max-w-full h-20 mb-4 lg:mt-3 hover:motion-preset-bounce hover:cursor-pointer"
               src={question_icon}
               alt="Question Icon"
             />
@@ -98,15 +107,29 @@ export default function MyWorldSection({ myWorldRef }) {
             </b>
           </div>
           <div className="flex justify-center items-end flex-wrap gap-8 lg:col-span-2 lg:justify-around w-3/4">
-            <article className="flex flex-col items-center">
+            <article
+              className="flex flex-col items-center hover:motion-scale-in-110 hover:cursor-pointer hover:motion-paused "
+              onMouseEnter={(e) => {
+                setShowDoorKeyAnimation({
+                  door: "motion-scale-out-[3.0] motion-delay-500/opacity motion-opacity-out-25",
+                  key: "-motion-translate-x-in-25 motion-duration-1000 motion-paused",
+                });
+              }}
+              onMouseLeave={(e) => {
+                setShowDoorKeyAnimation({
+                  door: "",
+                  key: "",
+                });
+              }}
+            >
               <div className="flex items-center mb-3">
                 <img
-                  className="object-contain max-w-full h-6"
+                  className={`object-contain max-w-full h-6 ${showDoorKeyAnimation.door}`}
                   src={door_lock_icon}
                   alt=""
                 />
                 <img
-                  className="object-contain max-w-full h-10"
+                  className={`object-contain max-w-full h-10 ${showDoorKeyAnimation.key}`}
                   src={key_icon}
                   alt=""
                 />
@@ -117,23 +140,45 @@ export default function MyWorldSection({ myWorldRef }) {
                 solutions
               </b>
             </article>
-            <article className="flex flex-col items-center">
+            <article
+              className="flex flex-col items-center hover:motion-scale-in-110 hover:cursor-pointer hover:motion-paused"
+              onMouseEnter={(e) => {
+                setShowBulletAnimation(
+                  "-motion-translate-x-out-100 motion-delay-500/opacity motion-opacity-out-25"
+                );
+              }}
+              onMouseLeave={(e) => {
+                setShowBulletAnimation("");
+              }}
+            >
               <div className="flex items-center mb-1">
                 <img
-                  className="object-contain max-w-full w-14"
+                  className={`object-contain max-w-full w-14 ${showBulletAnimation}`}
                   src={bullet_icon}
                   alt=""
                 />
               </div>
-              <b className="text-sm text-m-blue text-center lg:text-base">
+              <b className="text-sm text-m-blue text-center lg:text-base ">
                 Resilient and adaptable
                 <br />
                 to achieve the goals
               </b>
             </article>
-            <article className="flex flex-col items-center">
+            <article
+              className="flex flex-col items-center hover:motion-scale-in-110 hover:cursor-pointer hover:motion-paused"
+              onMouseEnter={(e) => {
+                setShowMushroomUpAnimation(
+                  "-motion-translate-y-out-100 motion-translate-x-out-100 motion-rotate-out-60 motion-duration-500 motion-delay-500/opacity motion-opacity-out-0"
+                );
+              }}
+              onMouseLeave={(e) => {
+                setShowMushroomUpAnimation("");
+              }}
+            >
               <div className="flex flex-col items-center mb-3">
-                <span className="font-mario text-white text-sm drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] tracking-widest text-center">
+                <span
+                  className={`font-mario text-white text-sm drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] tracking-widest text-center ${showMushroomUpAnimation}`}
+                >
                   1-up
                 </span>
                 <img

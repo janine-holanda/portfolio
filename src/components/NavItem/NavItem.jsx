@@ -16,7 +16,7 @@ export default function NavItem({ img, text, textColor }) {
       <div className="border-4 rounded-lg border-m-light-blue w-10 h-8 ring-2 ring-black sm:w-12 sm:h-10">
         <div className="ring-2 ring-black rounded-md border-black h-full bg-transparent p-[2px]">
           <img
-            className="w-full h-full hover:animate-spinY "
+            className="w-full h-full  hover:motion-duration-[1s] hover:motion-preset-oscillate"
             src={img}
             alt="image"
           />
