@@ -12,7 +12,7 @@ export default function ContactMeSection({ contactMeRef }) {
       <div className="container flex flex-col justify-center h-full">
         <h1 className="text-m-light-blue">Contact Me</h1>
         <h2 className="mb-12 text-m-light-blue font-bold md:text-2xl md:mb-14">
-          Let&apos;s go on in a coding adventure together!
+          Let&apos;s embark on a coding adventure together!
         </h2>
         <div className="flex flex-col gap-8 lg:flex-row">
           <ContactMeForm />

@@ -23,11 +23,11 @@ export default function ContactMeForm() {
 
   const postForm = async (data) => {
     try {
-      // axios.defaults.headers.post["Content-Type"] = "application/json";
-      // await axios.post("https://formsubmit.co/ajax/janine.holanda@gmail.com", {
-      //   name: data.name,
-      //   message: `E-mail: ${data.email} \n LinkedIn: ${data.linkedin} \n Message: ${data.message}`,
-      // });
+      axios.defaults.headers.post["Content-Type"] = "application/json";
+      await axios.post("https://formsubmit.co/ajax/janine.holanda@gmail.com", {
+        name: data.name,
+        message: `E-mail: ${data.email} \n LinkedIn: ${data.linkedin} \n Message: ${data.message}`,
+      });
       setOpenPopup(true);
       setFormData(initFormData);
       setFormError(initFormError);
@@ -91,7 +91,7 @@ export default function ContactMeForm() {
         onSubmit={handleSubmit}
         className="ring-1 ring-m-light-blue p-4 rounded-lg w-full max-w-2xl"
       >
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start">
           <div className="flex flex-col w-auto gap-2 font-semibold mb-4 md:w-[40%]">
             <label htmlFor="Name" className=" text-m-light-blue">
               {" "}
@@ -174,7 +174,7 @@ export default function ContactMeForm() {
         <div className="flex justify-end">
           <button
             type="submit"
-            className="bg-m-light-blue text-white rounded-md text-center font-semibold p-2 w-full hover:bg-opacity-85 max-w-48"
+            className="bg-m-light-blue text-white rounded-md text-center font-semibold p-2 w-full hover:bg-opacity-95 max-w-48"
           >
             Send Message
           </button>

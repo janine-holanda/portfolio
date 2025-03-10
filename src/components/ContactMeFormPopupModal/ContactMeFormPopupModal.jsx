@@ -19,17 +19,17 @@ export default function ContactMeFormPopupModal({ open, setOpen }) {
         size="sm"
       >
         <DialogHeader>Hello, Adventurer!</DialogHeader>
-        <div className="flex justify-center">
+        <div className="flex justify-center p-4">
           <img src={blue_luma_icon} alt="Blue Luma" className="w-12" />
         </div>
-        <DialogBody className="text-center">
+        <DialogBody className="text-center font-normal">
           Thank you for reaching out to me! Your message has been sent, and I'm
           excited to embark on this journey with you.
         </DialogBody>
         <DialogFooter className="flex justify-center">
           <button
             onClick={() => setOpen(false)}
-            className="bg-m-light-blue text-white rounded-md text-center font-semibold p-2 w-full max-w-48 hover:bg-opacity-85"
+            className="bg-m-light-blue text-white rounded-md text-center font-semibold p-2 w-full max-w-48 hover:bg-opacity-95"
           >
             Let&apos;s Go!
           </button>
