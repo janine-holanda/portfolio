@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-const withMT = require("@material-tailwind/react/utils/withMT");
-module.exports = withMT({
+import withMT from "@material-tailwind/react/utils/withMT";
+import motionPlugin from "tailwindcss-motion";
+
+export default withMT({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -17,11 +19,11 @@ module.exports = withMT({
         "m-light-blue": "#519bde",
       },
       backgroundImage: {
-        banner: "url('./src/assets/img/banner.png')",
-        "skills-pattern": "url('./src/assets/img/bg-section-skills.png')",
-        "projects-pattern": "url('./src/assets/img/bg-section-projects.png')",
-        "my-world-pattern": "url('./src/assets/img/bg-section-my-world.png')",
-        "contact-me-pattern": "url('./src/assets/img/bg-contact-me.png')",
+        banner: "url('/src/assets/img/banner.png')",
+        "skills-pattern": "url('/src/assets/img/bg-section-skills.png')",
+        "projects-pattern": "url('/src/assets/img/bg-section-projects.png')",
+        "my-world-pattern": "url('/src/assets/img/bg-section-my-world.png')",
+        "contact-me-pattern": "url('/src/assets/img/bg-contact-me.png')",
       },
       keyframes: {
         spinY: {
@@ -50,5 +52,5 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [require("tailwindcss-motion")],
+  plugins: [motionPlugin],
 });
