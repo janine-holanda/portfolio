@@ -1,7 +1,7 @@
 [
     {
       "id": "1",
-      "image_path": "src/assets/img/portfolio-project.png",
+      "image_path": "/portfolio/assets/img/portfolio-project.png",
       "name": "Portfolio", 
       "description": "An engaging front-end web application designed with gamification UI elements to ensure users have a fun experience while learning about my career journey. (React.js, Tailwindcss)",
       "repository_url": "https://github.com/janine-holanda/portfolio",
@@ -9,7 +9,7 @@
     },
     {
         "id": "2",
-        "image_path": "src/assets/img/edothub-project.png",
+        "image_path": "/portfolio/assets/img/edothub-project.png",
         "name": "E.HUB (Capstone)", 
         "description": "Web App (CRM) that simplifies corporate event management by centralizing communication between event hosts and managers. (React.js, Tailwindcss, Node.js, Express.js / REST Api)",
         "repository_url": "https://github.com/janine-holanda/janine-oliveira-capstone-edothub",
@@ -17,7 +17,7 @@
       },
     {
         "id": "3",
-        "image_path": "src/assets/img/instock-project.png",
+        "image_path": "/portfolio/assets/img/instock-project.png",
         "name": "InStock", 
         "description": "A full-stack web app developed as part of an Agile team to create an Inventory Management System. (React.js, SASS, Node.js, Express.js, Knex.js, SQL)",
         "repository_url": "https://github.com/janine-holanda/group-6-instock",
@@ -25,7 +25,7 @@
       },
     {
         "id": "4",
-        "image_path": "src/assets/img/expense-tracker-project.png",
+        "image_path": "/portfolio/assets/img/expense-tracker-project.png",
         "name": "Expense Tracker", 
         "description": "BrainStation Hackathon (6h): A full-stack web app that allows users add expenses, check the total amount spent, create new categories, and categorize expenses. (React.js, SASS, Node.js, Express.js)",
         "repository_url": "https://github.com/janine-holanda/expense-tracker",
@@ -33,7 +33,7 @@
       },
     {
         "id": "5",
-        "image_path": "src/assets/img/break-the-pig-bank-project.png",
+        "image_path": "/portfolio/assets/img/break-the-pig-bank-project.png",
         "name": "Break the Pig Bank", 
         "description": "BrainStation Hackathon (24h): Front-end web app inspired by the 'Who wants to be a millionaire?' game where users can answer questions and earn 'money'. (HTML, SASS, Vanilla JavaScript, Web API)",
         "repository_url": "https://github.com/janine-holanda/hackathon-trivia-game",

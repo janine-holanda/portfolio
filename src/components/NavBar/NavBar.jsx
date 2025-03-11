@@ -1,8 +1,4 @@
-import fireFlowerImg from "../../assets/icons/fire_flower_icon.png";
-import starImg from "../../assets/icons/star_icon.png";
-import blueLumaImg from "../../assets/icons/blue_luma_icon.png";
-import greenShellImg from "../../assets/icons/green_shell_icon.png";
-import redLumaImg from "../../assets/icons/boo_icon.png";
+import { ASSETS } from "../../constants/assets";
 import NavItem from "../NavItem/NavItem";
 import { handleScrollToSection } from "../../utils";
 
@@ -18,19 +14,39 @@ export default function NavBar({
       <nav className="container sm:h-full">
         <ul className="grid grid-cols-5 h-full items-center sm:grid-cols-1 sm:grid-rows-5">
           <li onClick={() => handleScrollToSection(homeRef)}>
-            <NavItem img={greenShellImg} text="HOME" textColor={"m-green"} />
+            <NavItem
+              img={ASSETS.icons.greenShell}
+              text="HOME"
+              textColor={"m-green"}
+            />
           </li>
           <li onClick={() => handleScrollToSection(myWorldRef)}>
-            <NavItem img={redLumaImg} text="MY WORLD" textColor={"m-blue"} />
+            <NavItem
+              img={ASSETS.icons.boo}
+              text="MY WORLD"
+              textColor={"m-blue"}
+            />
           </li>
           <li onClick={() => handleScrollToSection(skillsRef)}>
-            <NavItem img={fireFlowerImg} text="SKILLS" textColor={"m-red"} />
+            <NavItem
+              img={ASSETS.icons.fireFlower}
+              text="SKILLS"
+              textColor={"m-red"}
+            />
           </li>
           <li onClick={() => handleScrollToSection(projectsRef)}>
-            <NavItem img={starImg} text="PROJECTS" textColor={"m-yellow"} />
+            <NavItem
+              img={ASSETS.icons.star}
+              text="PROJECTS"
+              textColor={"m-yellow"}
+            />
           </li>
           <li onClick={() => handleScrollToSection(contactMeRef)}>
-            <NavItem img={blueLumaImg} text="Contact Me" textColor={"m-navy"} />
+            <NavItem
+              img={ASSETS.icons.blueLuma}
+              text="Contact Me"
+              textColor={"m-navy"}
+            />
           </li>
         </ul>
       </nav>

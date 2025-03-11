@@ -19,11 +19,13 @@ export default withMT({
         "m-light-blue": "#519bde",
       },
       backgroundImage: {
-        banner: "url('/src/assets/img/banner.png')",
-        "skills-pattern": "url('/src/assets/img/bg-section-skills.png')",
-        "projects-pattern": "url('/src/assets/img/bg-section-projects.png')",
-        "my-world-pattern": "url('/src/assets/img/bg-section-my-world.png')",
-        "contact-me-pattern": "url('/src/assets/img/bg-contact-me.png')",
+        banner: "url('/portfolio/assets/img/banner.png')",
+        "skills-pattern": "url('/portfolio/assets/img/bg-section-skills.png')",
+        "projects-pattern":
+          "url('/portfolio/assets/img/bg-section-projects.png')",
+        "my-world-pattern":
+          "url('/portfolio//assets/img/bg-section-my-world.png')",
+        "contact-me-pattern": "url('/portfolio/assets/img/bg-contact-me.png')",
       },
       keyframes: {
         spinY: {

@@ -1,5 +1,5 @@
-import starImg from "../../assets/icons/star_icon.png";
 import { useState, useEffect } from "react";
+import { ASSETS } from "../../constants/assets";
 
 export default function Card({ project }) {
   const [showDetails, setShowDetails] = useState(false);
@@ -48,7 +48,7 @@ export default function Card({ project }) {
         <div className="flex justify-between items-center mb-4">
           <h5 className="text-xl font-medium text-white">{project.name}</h5>
           <img
-            src={starImg}
+            src={ASSETS.icons.star}
             alt=""
             className="h-8 w-10 cursor-pointer"
             onClick={() => setShowDetails(!showDetails)}
@@ -66,7 +66,7 @@ export default function Card({ project }) {
         }`}
       >
         <img
-          src={starImg}
+          src={ASSETS.icons.star}
           alt=""
           className="object-fill w-16 h-14 absolute top-[33%] right-6 animate-[bounce_1s_infinite] cursor-pointer"
           onClick={() => setShowDetails(!showDetails)}
