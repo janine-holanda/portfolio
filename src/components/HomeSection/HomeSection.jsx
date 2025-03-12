@@ -12,7 +12,7 @@ export default function HomeSection({ homeRef }) {
           src={logo}
           alt="logo"
         />
-        <h2 className="mb-12 font-mario text-m-blue drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.9)] tracking-widest md:text-2xl md:mb-14 motion-preset-typewriter-[50] motion-duration-[10s]">
+        <h2 className="mb-12 font-mario text-m-blue drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.9)] tracking-widest md:text-2xl md:mb-14 motion-preset-typewriter-[50] motion-duration-[10s] text-sm">
           {" "}
           I&apos;m a full-stack web developer
           <br /> with a love for all things tech
