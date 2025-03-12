@@ -18,7 +18,7 @@ const initFormError = {
 export default function ContactMeForm() {
   const [formData, setFormData] = useState(initFormData);
   const [formError, setFormError] = useState(initFormError);
-  const [postError, setPostError] = useState("");
+  const [requestError, setRequestError] = useState("");
   const [openPopup, setOpenPopup] = useState(false);
   const [isLoading, setisLoading] = useState(false);
 
@@ -33,9 +33,10 @@ export default function ContactMeForm() {
       setisLoading(false);
       setFormData(initFormData);
       setFormError(initFormError);
-      setPostError("");
+      setRequestError("");
     } catch (error) {
-      setPostError(error.message);
+      setRequestError(error.message);
+      setisLoading(false);
     }
   };
 
@@ -77,7 +78,7 @@ export default function ContactMeForm() {
       setisLoading(true);
       postForm(formData);
     } else {
-      setPostError("Please fill in the required fields.");
+      setRequestError("Please fill in the required fields.");
       setFormError((prev) => ({
         ...prev,
         name: "This field is required.",
@@ -213,9 +214,9 @@ export default function ContactMeForm() {
             {isLoading ? "Sending..." : "Send Message"}
           </button>
         </div>
-        {postError && (
+        {requestError && (
           <p className="text-red-500 text-sm font-semibold mt-4 text-center">
-            {postError}
+            {requestError}
           </p>
         )}
       </form>
