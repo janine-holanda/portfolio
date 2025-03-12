@@ -17,35 +17,35 @@ export default function NavBar({
             <NavItem
               img={ASSETS.icons.greenShell}
               text="HOME"
-              textColor={"m-green"}
+              textColor={"text-m-green"}
             />
           </li>
           <li onClick={() => handleScrollToSection(myWorldRef)}>
             <NavItem
               img={ASSETS.icons.boo}
               text="MY WORLD"
-              textColor={"m-blue"}
+              textColor={"text-m-blue"}
             />
           </li>
           <li onClick={() => handleScrollToSection(skillsRef)}>
             <NavItem
               img={ASSETS.icons.fireFlower}
               text="SKILLS"
-              textColor={"m-red"}
+              textColor={"text-m-red"}
             />
           </li>
           <li onClick={() => handleScrollToSection(projectsRef)}>
             <NavItem
               img={ASSETS.icons.star}
               text="PROJECTS"
-              textColor={"m-yellow"}
+              textColor={"text-m-yellow"}
             />
           </li>
           <li onClick={() => handleScrollToSection(contactMeRef)}>
             <NavItem
               img={ASSETS.icons.blueLuma}
               text="Contact Me"
-              textColor={"m-navy"}
+              textColor={"text-m-navy"}
             />
           </li>
         </ul>

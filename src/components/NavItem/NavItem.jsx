@@ -23,7 +23,7 @@ export default function NavItem({ img, text, textColor }) {
         </div>
       </div>
       <h4
-        className={`${showText} mt-1 font-mario text-center text-${textColor} text-[0.625rem] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] tracking-wider animate-fadeIn`}
+        className={`${showText} mt-1 font-mario text-center ${textColor} text-[0.625rem] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] tracking-wider animate-fadeIn`}
       >
         {text}
       </h4>
