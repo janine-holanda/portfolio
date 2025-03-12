@@ -210,7 +210,7 @@ export default function ContactMeForm() {
                 : "cursor-pointer"
             }`}
           >
-            Send Message
+            {isLoading ? "Sending..." : "Send Message"}
           </button>
         </div>
         {postError && (
